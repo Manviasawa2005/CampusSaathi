@@ -280,18 +280,120 @@ The final table structure, relationships, constraints, and marks-related databas
 **Week 2 Status:** Requirements documentation and initial system design prepared. Detailed implementation and verification will continue in subsequent weeks.
 
 ### Week 3 — Database Schema Design
+## Week 3 — UML Architecture & System Design
 
-**Objective:** Design the database structure for assignment management.
+### 1. Overview
 
-**Work completed:**
-- Mausam designed the `assignments` table schema.
-- Manvi reviewed the backend feasibility of the proposed schema.
+Week 3 focuses on the UML architecture and system design of CampusSaathi — Academic Assignment Management System. The purpose of this phase is to represent the system's structure, user interactions, workflows, and application components through design diagrams.
 
-**Deliverables:** Draft `schema.sql` and ER diagram.
+CampusSaathi is designed as a Java-based web application using Java 21, Jakarta Servlets, JSP, JDBC, MySQL, and Apache Tomcat 11. The application follows an MVC-style separation of responsibilities between request handling, presentation, and data access.
 
-**Evidence:** The database schema draft is reported in `database/schema.sql`; the file will be linked after it is added to and verified in the repository.
+The diagrams prepared for this phase are maintained in the [`docs/diagrams/`](docs/diagrams/) directory.
 
-**Status:** Completed
+### 2. Class Diagram
+
+The Class Diagram represents the application's relevant classes, their responsibilities, attributes, methods, and relationships.
+
+It should reflect the actual implementation of CampusSaathi, including relevant authentication, assignment management, PDF handling, and database-related classes.
+
+**Diagram:** [View Class Diagram](docs/diagrams/ClassDiagram.png)
+
+**Verification status:** Confirm the filename and ensure the diagram matches the actual source code.
+
+### 3. Use Case Diagram
+
+The Use Case Diagram represents the interactions between system actors and the application's available functions.
+
+The currently documented roles are Admin, Teacher, Student, HOD, and Club Lead. Their final permissions and use cases must be consistent with the implemented authentication and authorization rules.
+
+**Diagram:** [View Use Case Diagram](docs/diagrams/UseCaseDiagram.png)
+
+**Verification status:** Confirm the filename and verify each actor's use cases against the actual requirements and implementation.
+
+### 4. Sequence Diagram(s)
+
+Sequence diagrams illustrate the order of interactions between users, application components, servlets, and database operations for selected workflows.
+
+Relevant workflows may include:
+
+- User authentication and session handling.
+- Teacher assignment creation.
+- Optional PDF upload and assignment record storage.
+- Student assignment retrieval.
+- Authorized PDF viewing or downloading.
+
+Only workflows represented by the prepared diagrams and supported by the implementation should be documented as completed.
+
+**Diagrams:**
+- [Authentication Sequence Diagram](docs/diagrams/AuthenticationSequence.png)
+- [Assignment Creation Sequence Diagram](docs/diagrams/AssignmentCreationSequence.png)
+- [PDF Access Sequence Diagram](docs/diagrams/PdfAccessSequence.png)
+
+**Verification status:** Replace these example filenames with the actual filenames and retain only the diagrams that have been prepared.
+
+### 5. Activity Diagram
+
+The Activity Diagram represents the sequence of activities, decisions, and alternative paths involved in a selected CampusSaathi workflow.
+
+Possible workflows include login validation, assignment creation, file upload validation, and student assignment access.
+
+**Diagram:** [View Activity Diagram](docs/diagrams/ActivityDiagram.png)
+
+**Verification status:** Confirm the actual filename and the workflow represented.
+
+### 6. Component and Deployment Architecture
+
+The Component Architecture describes the major application components and their interactions, such as JSP pages, Jakarta Servlets, JDBC database connectivity, and MySQL persistence.
+
+The Deployment Architecture may illustrate the development or deployment environment involving the web application, Apache Tomcat 11, and MySQL.
+
+The diagrams should distinguish the intended architecture from any deployment that has actually been configured and verified.
+
+**Diagrams:**
+- [Component Diagram](docs/diagrams/ComponentDiagram.png)
+- [Deployment Diagram](docs/diagrams/DeploymentDiagram.png)
+
+**Verification status:** Confirm the actual filenames. Production deployment or public hosting is not claimed.
+
+### 7. State Machine Diagram
+
+A State Machine Diagram may be used to represent meaningful state transitions in a CampusSaathi workflow, such as an assignment's lifecycle, if these states are defined by the requirements or implementation.
+
+**Diagram:** [View State Machine Diagram](docs/diagrams/StateMachineDiagram.png)
+
+**Verification status:** Confirm whether this diagram is included in the prepared set and whether its states correspond to the actual system. If no relevant State Machine Diagram has been prepared, mark it as Pending or omit this subsection.
+
+### 8. Design Principles
+
+The system design aims to support the following principles:
+
+- Separation of presentation, request handling, and data access responsibilities.
+- Role-aware access to application functions.
+- Structured handling of assignment information and associated PDF metadata.
+- Server-side validation and authorization where required.
+- Maintainable application components and relational database integration.
+
+These principles describe the intended design. Their implementation must be verified against the actual source code.
+
+### 9. Week 3 Deliverables
+
+| Deliverable | Status |
+|---|---|
+| Class Diagram | Prepared; filename and implementation consistency to be verified |
+| Use Case Diagram | Prepared; filename and actor permissions to be verified |
+| Sequence Diagram(s) | Prepared; actual workflows and filenames to be verified |
+| Activity Diagram | Prepared; filename and workflow to be verified |
+| Component / Deployment Architecture | Prepared; filenames and architecture details to be verified |
+| State Machine Diagram | Pending verification, if applicable |
+| Diagram organization in GitHub | Upload reported complete; repository contents to be verified |
+
+### Week 3 Status
+
+The Week 3 UML and system design diagrams have been prepared and their upload to the GitHub repository has been reported complete. Final verification of filenames, diagram links, and consistency with the actual implementation remains pending.
+
+
+
+
 
 ### Week 4 — Authentication Module
 
