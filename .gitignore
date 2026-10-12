@@ -1,0 +1,21 @@
+# Eclipse IDE
+.metadata/
+.settings/
+*.launch
+
+# Compiled Java files
+*.class
+build/
+
+# Logs and temporary files
+*.log
+tmp/
+
+# Local configuration and secrets
+.env
+config.properties
+secrets.properties
+
+# Operating system files
+.DS_Store
+Thumbs.db
