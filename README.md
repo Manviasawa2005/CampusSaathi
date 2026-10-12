@@ -203,6 +203,7 @@ The project is developed under the academic framework of Rajasthan Technical Uni
 
 - Project abstract document: `ABSTRACTCAMPUSSAATHI.docx`
 - Team responsibility chart: Add the actual file or image link when available.
+  📄 **Full Abstract:** [View / Download CampusSaathi Abstract](ABSTRACTCAMPUSSAATHI.docx)
 
 ### Week 2 — Development Environment Setup
 
