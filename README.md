@@ -207,17 +207,77 @@ The project is developed under the academic framework of Rajasthan Technical Uni
 
 ### Week 2 — Development Environment Setup
 
-**Objective:** Prepare the development environment.
+## Week 2: User Roles, SRS & System Architecture
 
-**Work completed:**
-- Installed Java 21, Eclipse IDE, Apache Tomcat 11, and MySQL.
-- Created the initial Eclipse Dynamic Web Project.
+### 1. Software Requirements Specification (SRS)
 
-**Deliverables:** Base project folder and Tomcat configuration notes.
+The Software Requirements Specification (SRS) defines the purpose, scope, user roles, functional requirements, non-functional requirements, interfaces, and analysis models of CampusSaathi.
 
-**Evidence:** Local CampusSaathi project and Eclipse setup screenshots, where available.
+📄 **SRS Document:** [View / Download CampusSaathi SRS](SRSCAMPUSSATHI.pdf)
 
-**Status:** Completed
+### 2. Architecture & Core Modules
+
+CampusSaathi is an academic assignment management web application developed using Java web technologies. The reported technology stack includes:
+
+- **Backend:** Java 21, Jakarta Servlets
+- **Frontend:** JSP, HTML, CSS
+- **Database:** MySQL with JDBC
+- **Server:** Apache Tomcat 11
+- **Development Environment:** Eclipse IDE
+- **Architecture:** MVC-style separation of application responsibilities
+
+The current system design focuses on authentication, assignment management, PDF handling, student assignment viewing, and marks-related functionality.
+
+### 3. User Roles
+
+| User Role | Responsibility |
+|---|---|
+| Admin | Generates or provides login credentials for Teacher, Student, HOD, and Club Lead |
+| Teacher | Creates assignments and manages assignment-related marks functionality |
+| Student | Views relevant assignments, PDFs, and marks-related information |
+| HOD | View-oriented access; exact permissions to be verified |
+| Club Lead | View-oriented access; exact permissions to be verified |
+
+### 4. Functional Modules
+
+- Role-based login and session handling
+- Admin-managed user credentials
+- Teacher assignment creation
+- Optional PDF upload for assignments
+- Batch-wise assignment display for students
+- Controlled PDF viewing and downloading
+- Marks-related functionality
+- View-oriented access for HOD and Club Lead
+
+The final functionality will be documented against the actual implementation.
+
+### 5. Relational Database Strategy
+
+MySQL is used as the reported relational database, with JDBC for database connectivity. Assignment information and associated PDF metadata are intended to be stored and retrieved through the application's database operations.
+
+The final table structure, relationships, constraints, and marks-related database details will be documented after verification of the actual schema.
+
+### 6. Non-Functional Requirements
+
+- **Security:** Apply authentication and server-side authorization checks.
+- **Data Integrity:** Maintain correct associations between assignment records and PDF metadata.
+- **Reliability:** Handle invalid inputs, database errors, and unavailable or unauthorized files appropriately.
+- **Maintainability:** Keep request handling, views, and database operations reasonably separated.
+- **Usability:** Provide role-relevant pages and understandable validation messages.
+- **File Handling:** Validate uploads and protect access to stored assignment PDFs.
+
+### 7. Week 2 Deliverables
+
+| Deliverable | Status |
+|---|---|
+| Software Requirements Specification (SRS) | Document prepared; verify against implementation |
+| Technology stack identification | Documented |
+| User roles and responsibilities | Initial requirements documented |
+| System architecture description | Initial design documented |
+| Functional and non-functional requirements | Documented; implementation verification pending |
+
+
+**Week 2 Status:** Requirements documentation and initial system design prepared. Detailed implementation and verification will continue in subsequent weeks.
 
 ### Week 3 — Database Schema Design
 
