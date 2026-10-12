@@ -155,17 +155,54 @@ This section tracks the project across 12 academic weeks. Statuses reflect the p
 
 ### Week 1 — Project Scope and Team Responsibilities
 
-**Objective:** Define the project scope and allocate team responsibilities.
+## Week 1: Project Guide, Team Formation & Project Abstract
 
-**Work completed:**
-- Conducted a team meeting to finalize the problem statement.
-- Assigned responsibilities across backend development, database design, UI, authentication, and documentation.
+### 1. Project Guide
 
-**Deliverables:** Responsibility table and initial project overview document.
+- **Guide Name:** Er. Ram Babu Buri
 
-**Evidence:** Team responsibility chart and project overview notes. Repository links will be added when the files are available.
+### 2. Department & Academic Specification
 
-**Status:** Completed
+- **Department:** Artificial Intelligence and Data Science (AI & DS)
+- **Academic Context:** RTU, 5th Semester
+- **Project Title:** CampusSaathi — Academic Assignment Management System
+- **Project Tagline:** Your Campus. Connected. Simplified.
+
+### 3. Project Team & Responsibilities
+
+| Team Member | Role | Module / Responsibility | Enrollment / Roll No. | Email |
+|---|---|---|---|---|
+| Manvi Asawa | Backend Development | Teacher assignment management, backend development, README and repository organization | Pending | Pending |
+| Mausam | Database Developer | Database design and schema | Pending | Pending |
+| Nikita | Authentication & Portal Developer | Authentication, session handling, student portal and PDF access | Pending | Pending |
+| Nikita Rathore | Student Portal Developer | Student assignment viewing | Pending | Pending |
+| Kusum | Documentation & Integration | Marks integration, SRS, abstract and project report | Pending | Pending |
+
+### 4. Project Abstract
+
+CampusSaathi — Academic Assignment Management System is a centralized Java-based web application designed to streamline assignment handling for college students and teachers. It provides a structured, accessible platform for managing assignment information and associated PDF question papers, replacing fragmented communication channels with a unified workflow.
+
+The application uses Java 21, Jakarta Servlets, JSP, JDBC, Apache Tomcat 11, MySQL, HTML and CSS. Its core features include role-based authentication, session tracking, teacher-side assignment creation, optional PDF uploads, batch-based student assignment retrieval and servlet-based authorization for secure document access.
+
+The project follows the Model-View-Controller (MVC) design pattern and integrates MySQL for persistent storage. It also brings together assignment management, document access and marks-related functionality in a centralized academic platform.
+
+The project is developed under the academic framework of Rajasthan Technical University (RTU) and serves as an academic prototype demonstrating Java web technologies and software development practices.
+
+### 5. Week 1 Deliverables
+
+- Project title and scope identification
+- Project guide and department details
+- Initial team responsibility allocation
+- Project abstract
+
+### 6. Week 1 Status
+
+**Status:** Partially documented — project and team details recorded; enrollment numbers and email addresses are yet to be added.
+
+### 7. Supporting Evidence
+
+- Project abstract document: `ABSTRACTCAMPUSSAATHI.docx`
+- Team responsibility chart: Add the actual file or image link when available.
 
 ### Week 2 — Development Environment Setup
 
