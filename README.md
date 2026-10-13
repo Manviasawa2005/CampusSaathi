@@ -370,18 +370,131 @@ These are intended design principles; implementation details must be verified ag
 
 
 ### Week 4 — Authentication Module
+## Week 4 — Database Design, UI Mock-ups & Authentication Module
+
+### 1. Objective
+
+The objective of Week 4 is to design and document the CampusSaathi database, organize the user interface mock-ups, and work on the authentication module, including login, session handling, and role-based access control.
+
+### 2. Database Design
+
+The project uses MySQL as its database management system. The database, `campussaathi_db`, contains seven tables to support user management, assignment distribution, submissions, announcements, class scheduling, college information, and complaints.
+
+**Database tables:**
+
+| Table | Purpose |
+|---|---|
+| `users` | Stores user details, roles, account status, and batch information. |
+| `assignments` | Stores assignment details, subjects, batches, descriptions, marks, and PDF filenames. |
+| `assignment_submissions` | Tracks student submissions, submission status, and marks. |
+| `announcements` | Stores announcements and their intended audiences. |
+| `class_schedule` | Stores class schedules, timings, classrooms, and teacher references. |
+| `college_info` | Stores general college information and notices. |
+| `complaints` | Stores complaints, submitter details, and complaint status. |
+
+### 3. Database Relationships and Integrity
+
+The database uses primary keys and foreign keys to connect related records and maintain data integrity.
+
+- Users can create assignments and be referenced as teachers, students, or announcement senders.
+- Assignment submissions connect assignments with students.
+- Submission records can reference the user who marked the work.
+- Announcements can reference their sender and, where applicable, a target user.
+- Class schedules can reference the assigned teacher.
+- Complaints reference the user who submitted them.
+- Unique constraints help prevent duplicate user emails and duplicate assignment or student-submission combinations.
+
+### 4. Database Schema
+
+The database structure has been exported to an SQL file.
+
+**Schema file:** [`CampusSaathi_Schema.sql`](CampusSaathi_Schema.sql)
+
+The file documents the database structure and table definitions. It should be reviewed before being executed against any existing database.
+
+### 5. Entity–Relationship (ER) Diagram
+
+The ER diagram represents the database tables and their relationships.
+
+![CampusSaathi Entity Relationship Diagram](CampusSaathi_ER_Diagram.png)
+
+**Diagram file:** [`CampusSaathi_ER_Diagram.png`](CampusSaathi_ER_Diagram.png)
+
+Detailed database documentation is available in [`docs/docs/database/README.md`](docs/docs/database/README.md).
+
+### 6. UI Mock-ups and Screenshots
+
+Eight UI screenshots have been uploaded to the repository to document the planned or developed interface views for different user roles.
+
+#### Main Dashboard
+
+![Main Dashboard](docs/ui-mockups/dashboard.png)
+
+#### Dashboard Variation A
+
+![Dashboard A](docs/ui-mockups/dashboard(a).png)
+
+#### Dashboard Variation B
+
+![Dashboard B](docs/ui-mockups/dashboard(b).png)
+
+#### Administration Portal
+
+![Administration Portal](docs/ui-mockups/adminstration%20portal.png)
+
+#### HOD Portal
+
+![HOD Portal](docs/ui-mockups/hod%20portal.png)
+
+#### Teacher Portal
+
+![Teacher Portal](docs/ui-mockups/teacher%20portal.png)
+
+#### Student Portal
+
+![Student Portal](docs/ui-mockups/student%20portal.png)
+
+#### Club Leader Portal
+
+![Club Leader Portal](docs/ui-mockups/club%20lead%20portal.png)
+
+All eight screenshots are documented in [`docs/ui-mockups/README.md`](docs/ui-mockups/README.md).
+
+### 7. Authentication Module
 
 **Objective:** Implement login, session handling, and role-based access checks.
 
-**Work completed:**
-- Nikita worked on login JSP pages.
-- Session handling and role-based checks were developed.
+**Work in progress:**
 
-**Deliverables:** Login JSP pages and `AuthenticationServlet.java`.
+- Login JSP pages are being developed.
+- Session handling is part of the authentication implementation.
+- Role-based access checks are being developed to support the different user roles.
+- The planned authentication flow will support authorized access to role-specific portal features.
 
-**Evidence:** Login screenshots and relevant source code or commit links, once available.
+**Planned deliverables:**
 
-**Status:** In Progress
+- Login JSP pages.
+- `AuthenticationServlet.java`.
+- Session management and role-based access checks.
+
+### 8. Week 4 Deliverables
+
+- MySQL database structure for seven tables.
+- `CampusSaathi_Schema.sql`.
+- `CampusSaathi_ER_Diagram.png`.
+- Database documentation.
+- Eight UI mock-up screenshots.
+- UI screenshot documentation.
+- Authentication module work in progress.
+
+### 9. Week 4 Status
+
+- **Database design and documentation:** Completed.
+- **ER diagram:** Exported and uploaded.
+- **UI screenshot documentation:** Uploaded.
+- **Authentication module:** In progress.
+
+Week 4 establishes the database structure and documents the application's interface views while authentication development continues.
 
 ### Week 5 — Teacher Assignment Creation
 
