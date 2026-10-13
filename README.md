@@ -1135,7 +1135,7 @@ Integration work also involved reviewing interactions between JSP pages, Java se
 
 | **Deliverable** | **Description** | **Resource Link** |
 | --------------- | --------------- | ----------------- |
-| 🌐 **Live Web Application** | Run the CampusSaathi web application locally using Eclipse and Apache Tomcat. | [Open CampusSaathi Portal](http://localhost:8081/CampusSaathi/) |
+| 🌐 **Live Web Application** | Access the CampusSaathi web application online. | [Open CampusSaathi Portal](https://campussaathi.onrender.com) |
 | 📜 **Project Abstract** | Project overview, objectives, problem statement, and proposed solution. | [View Project Abstract](https://github.com/Manviasawa2005/CampusSaathi/blob/main/ABSTRACTCAMPUSSAATHI.docx) |
 | 📋 **Software Requirements Specification (SRS)** | Functional and non-functional requirements and system specifications. | [View SRS Document](https://github.com/Manviasawa2005/CampusSaathi/blob/main/SRSCAMPUSSATHI.pdf.docx) |
 | 📑 **IEEE Research Paper** | Research paper documenting the CampusSaathi project, its design, and implementation. | [View IEEE Research Paper](https://github.com/Manviasawa2005/CampusSaathi/blob/main/research%20paper.pdf) |
