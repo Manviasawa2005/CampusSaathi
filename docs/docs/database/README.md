@@ -43,4 +43,4 @@ Schema file: [`CampusSaathi_Schema.sql`](../../CampusSaathi_Schema.sql)
 
 The following diagram represents the database structure and relationships.
 
-![CampusSaathi Entity–Relationship Diagram](../../CampusSaathi_ER_Diagram.png)
+![CampusSaathi Entity–Relationship Diagram](../../../CampusSaathi_ER_Diagram.png)
