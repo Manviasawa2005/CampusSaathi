@@ -469,19 +469,138 @@ All eight screenshots are documented in [`docs/ui-mockups/README.md`](docs/ui-mo
 
 Week 4 establishes the database structure and documents the application's interface views while authentication development continues.
 
-### Week 5 — Teacher Assignment Creation
+## Week 5: Project Structure & Module 1 Implementation
 
-**Objective:** Enable teachers to create assignments and attach PDFs.
+### 1. Project Overview
 
-**Work completed:**
-- Manvi developed the teacher assignment servlet.
-- Integrated multipart PDF upload logic into the assignment workflow.
+During Week 5, the focus was on organizing the CampusSaathi project structure and documenting the backend foundation for the Academic Assignment Management System.
 
-**Deliverables:** Assignment servlet and assignment creation JSP form.
+The application uses Java 21, Jakarta Servlets, JSP, JDBC, MySQL, and Apache Tomcat 11. Its source code is organized into Java backend classes and web application resources.
 
-**Evidence:** Relevant Java source code and form screenshots, after repository paths are verified.
+### 2. Project Directory Structure
 
-**Status:** In Progress
+The following directory tree represents the project structure inside the `src` directory.
+
+```text
+src/
+└── main/
+    ├── java/
+    │   └── com/
+    │       └── campussaathi/
+    │           └── controller/
+    │               ├── AdminBulkImportServlet.java
+    │               ├── AdminCreateUserServlet.java
+    │               ├── AdminCsvTemplateServlet.java
+    │               ├── AdminDashboardServlet.java
+    │               ├── AdminResetPasswordServlet.java
+    │               ├── AdminUserManagementServlet.java
+    │               ├── AssignmentPdfServlet.java
+    │               ├── ChatServlet.java
+    │               ├── ClubDashboardServlet.java
+    │               ├── CollegeInfoService.java
+    │               ├── CollegeInfoServlet.java
+    │               ├── ComplaintsServlet.java
+    │               ├── DatabaseTestServlet.java
+    │               ├── DBConnection.java
+    │               ├── HODAnnouncementServlet.java
+    │               ├── HODCollegeInfoServlet.java
+    │               ├── HODCreateUserServlet.java
+    │               ├── HODDashboardServlet.java
+    │               ├── HODUserManagementServlet.java
+    │               ├── HomeServlet.java
+    │               ├── InitialUserSetup.java
+    │               ├── LoginServlet.java
+    │               ├── LogoutServlet.java
+    │               ├── MyAnnouncementsServlet.java
+    │               ├── PasswordUtil.java
+    │               ├── StudentAssignmentsServlet.java
+    │               ├── StudentDashboardServlet.java
+    │               ├── TeacherAnnouncementServlet.java
+    │               ├── TeacherAssignmentsServlet.java
+    │               ├── TeacherClassesServlet.java
+    │               └── TeacherDashboardServlet.java
+    └── webapp/
+        ├── index.jsp
+        ├── login.jsp
+        ├── lib/
+        │   └── mysql-connector-j-26.7.0.jar
+        ├── META-INF/
+        │   └── MANIFEST.MF
+        └── WEB-INF/
+            ├── web.xml
+            └── lib/
+                └── mysql-connector-j-26.7.0.jar
+```
+
+### 3. Directory and File Description
+
+| Directory / File | Description |
+|---|---|
+| `src/main/java/com/campussaathi/controller/` | Contains the Java classes responsible for handling application requests and backend operations. |
+| `Admin...Servlet.java` | Provides classes for administrator operations, including dashboards, user management, password resets, and bulk imports. |
+| `HOD...Servlet.java` | Contains classes for HOD dashboards, announcements, college information, and user management. |
+| `Teacher...Servlet.java` | Supports teacher dashboards, assignment management, announcements, and class-related operations. |
+| `Student...Servlet.java` | Supports student dashboards and assignment-related functionality. |
+| `LoginServlet.java` | Handles login requests. |
+| `LogoutServlet.java` | Handles logout requests. |
+| `AssignmentPdfServlet.java` | Supports assignment PDF-related requests. |
+| `ChatServlet.java` | Handles chat-related requests. |
+| `ComplaintsServlet.java` | Handles complaint-related requests. |
+| `DBConnection.java` | Provides database connectivity support. |
+| `CollegeInfoService.java` | Contains college-information-related service logic. |
+| `PasswordUtil.java` | Provides password-related utility functions. |
+| `InitialUserSetup.java` | Supports initial user setup operations. |
+| `DatabaseTestServlet.java` | Supports database connectivity testing. |
+| `src/main/webapp/index.jsp` | Main JSP entry page. |
+| `src/main/webapp/login.jsp` | Login page. |
+| `src/main/webapp/WEB-INF/web.xml` | Contains web application deployment configuration. |
+| `src/main/webapp/META-INF/MANIFEST.MF` | Contains application manifest metadata. |
+| `mysql-connector-j-26.7.0.jar` | MySQL JDBC driver library used for database connectivity. |
+
+### 4. Module 1: Backend Development & Project Structure
+
+#### Member 1: Manvi Asawa
+
+**Role:** Backend Development & Project Structure
+
+#### Role & Scope of Work
+
+Manvi Asawa was responsible for the backend development scope and organization of the CampusSaathi project structure.
+
+The responsibilities associated with this module included:
+
+- Organizing Java backend source files within the project.
+- Maintaining a clear structure for controller classes.
+- Supporting the application's Java Servlet and JSP-based architecture.
+- Organizing backend components for administrator, HOD, teacher, and student functionality.
+- Supporting database connectivity integration through JDBC.
+- Maintaining project organization and technical documentation.
+
+#### Problems & Challenges Faced
+
+- Organizing multiple backend classes within a consistent package structure.
+- Keeping role-specific functionality organized across administrator, HOD, teacher, and student operations.
+- Maintaining clear separation between Java source code and web application resources.
+- Coordinating backend components with database and web-layer requirements.
+- Keeping project documentation aligned with the actual repository structure.
+
+#### What Was Completed
+
+- Documented the actual project directory structure.
+- Identified and organized the backend controller package and its Java classes in the project documentation.
+- Documented the purpose of important backend classes and web application resources.
+- Recorded the application configuration and MySQL JDBC driver locations.
+- Prepared a structured overview of the backend foundation for subsequent module development.
+
+**Week 5 Status:** Completed
+
+### 5. Week 5 Summary
+
+Week 5 focused on documenting the CampusSaathi application structure and its backend components. The directory overview identifies the Java source package, web application resources, deployment configuration, and MySQL JDBC driver.
+
+This structure provides a reference for understanding the codebase and supports continued development, module coordination, and system integration.
+
+
 
 ### Week 6 — PDF Upload and Storage
 
