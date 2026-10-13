@@ -285,73 +285,63 @@ The final table structure, relationships, constraints, and marks-related databas
 
 ### 1. Objective
 
-The objective of Week 3 was to document the system architecture, identify the interactions between users and the system, and represent the major workflows of CampusSaathi using UML diagrams.
+The objective of Week 3 was to design and document the CampusSaathi system using diagrams that explain its functionality, architecture, components, deployment, and interactions.
 
-### 2. System Overview
+### 2. Assignment Management Diagram
 
-CampusSaathi is an academic assignment management system designed to connect students, teachers, HODs, college administrators, and club leaders through a centralized platform.
+This diagram illustrates the assignment management workflow in CampusSaathi.
 
-The system is designed to support assignment management, student submissions, marks tracking, announcements, class schedules, college information, and complaint management.
+![Assignment Management Diagram](docs/diagrams/assignment%20mangement.png)
 
-### 3. System Architecture
+### 3. Student Assignment Diagram
 
-The project follows an MVC-based structure using Java, Jakarta Servlets, JSP, JDBC, and MySQL.
+This diagram represents the student assignment-related workflow.
 
-- **Model:** Represents the application's data and database interactions.
-- **View:** JSP pages and HTML/CSS provide the user interface.
-- **Controller:** Jakarta Servlets handle requests and coordinate application operations.
-- **Database:** MySQL stores user accounts, assignments, submissions, announcements, schedules, college information, and complaints.
+![Student Assignment Diagram](docs/diagrams/student%20assignment.png)
 
-### 4. UML Diagrams
+### 4. UML Class Diagram
 
-The following diagrams are part of the system design documentation. They describe the intended system behavior and structure.
+The Class Diagram represents the classes and their relationships in the system.
 
-#### 4.1 Use Case Diagram
+![CampusSaathi Class Diagram](docs/diagrams/uml%20class%20diagram.png)
 
-The Use Case Diagram represents the system's major actors and their interactions with CampusSaathi.
+### 5. UML Component Diagram
 
-![CampusSaathi Use Case Diagram](docs/diagram/use-case-diagram.png)
+The Component Diagram illustrates the major software components and their organization.
 
-#### 4.2 Class Diagram
+![UML Component Diagram](docs/diagrams/uml%20component%20diagram.png)
 
-The Class Diagram represents the main classes and their relationships in the application design.
+### 6. UML Deployment Diagram
 
-![CampusSaathi Class Diagram](docs/diagram/class-diagram.png)
+The Deployment Diagram represents the deployment structure of the system.
 
-#### 4.3 Sequence Diagram
+![UML Deployment Diagram](docs/diagrams/uml%20deployment%20diagram.png)
 
-The Sequence Diagram illustrates the sequence of interactions between users and application components during a selected workflow.
+### 7. UML Sequence Diagram
 
-![CampusSaathi Sequence Diagram](docs/diagram/sequence-diagram.png)
+The Sequence Diagram illustrates the sequence of interactions between system components during a workflow.
 
-#### 4.4 Activity Diagram
+![UML Sequence Diagram](docs/diagrams/uml%20sequence%20diagram.png)
 
-The Activity Diagram is intended to represent the flow of activities in a major application workflow.
+### 8. Use Case Diagram
 
-**Status:** Include the diagram here when it has been created and uploaded.
+The Use Case Diagram represents the actors and their interactions with CampusSaathi.
 
-#### 4.5 State Machine Diagram
+![Use Case Diagram](docs/diagrams/use%20case%20diagram.png)
 
-The State Machine Diagram is intended to describe how an entity changes state in response to events.
+### 9. Week 3 Deliverables
 
-**Status:** Include the diagram here when it has been created and uploaded.
+- Assignment Management Diagram
+- Student Assignment Diagram
+- UML Class Diagram
+- UML Component Diagram
+- UML Deployment Diagram
+- UML Sequence Diagram
+- Use Case Diagram
 
-### 5. Design Documentation
+### 10. Status
 
-The UML diagrams help document the system's actors, structure, interactions, and workflows. They serve as a reference for implementation and future development.
-
-### 6. Week 3 Deliverables
-
-- UML design documentation.
-- Use Case Diagram.
-- Class Diagram.
-- Sequence Diagram.
-- Activity Diagram and State Machine Diagram, when completed and uploaded.
-
-### 7. Week 3 Status
-
-The available UML diagrams were documented as part of the system design work. Any diagram not yet created or uploaded remains pending.
-
+The seven diagrams are documented as part of the CampusSaathi system design documentation.
 ### Week 4 — Authentication Module
 ## Week 4 — Database Design, UI Mock-ups & Authentication Module
 
