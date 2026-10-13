@@ -602,35 +602,93 @@ This structure provides a reference for understanding the codebase and supports 
 
 
 
-### Week 6 — PDF Upload and Storage
+## Week 6: Module 2 — Database Design & Connectivity
 
-**Objective:** Support PDF uploads and organize uploaded files.
+### 1. Module Overview
 
-**Work completed:**
-- Implemented UUID-based filenames.
-- Added file-size validation.
-- Updated the database schema with a `pdf_filename` field.
-- Configured the intended upload storage directory.
+Week 6 focused on the database design and connectivity foundation of CampusSaathi. The database supports the application's academic assignment management features and stores information related to users, assignments, submissions, announcements, schedules, college information, and complaints.
 
-**Deliverables:** Updated upload logic, schema changes, and storage configuration.
+The database layer is designed to work with MySQL, with Java Database Connectivity (JDBC) supporting communication between the Java application and the database.
 
-**Evidence:** Relevant source changes and database schema update.
+### 2. Member 2: Mausam — Database Design & Connectivity
+
+#### Role & Scope of Work
+
+Mausam was responsible for the database design and schema documentation for CampusSaathi.
+
+The scope of work included:
+
+- Designing the database structure to support the application's functional requirements.
+- Defining tables and their relationships.
+- Preparing the MySQL database schema.
+- Supporting data consistency through appropriate database constraints and relationships.
+- Documenting the database design and Entity-Relationship (ER) model.
+- Supporting integration requirements between the database and Java backend.
+
+#### Problems & Challenges Faced
+
+- Organizing data for different user roles and application features.
+- Establishing suitable relationships between users, assignments, and assignment submissions.
+- Maintaining consistency across related database records.
+- Structuring the schema to support future module integration.
+- Documenting the database design clearly for development and evaluation.
+
+#### What Was Completed
+
+- Prepared the CampusSaathi database schema.
+- Documented the database structure and its seven main tables:
+  1. `users`
+  2. `assignments`
+  3. `assignment_submissions`
+  4. `announcements`
+  5. `class_schedule`
+  6. `college_info`
+  7. `complaints`
+- Prepared the Entity-Relationship (ER) diagram.
+- Organized database documentation covering tables, relationships, and data integrity.
+- Documented the database resources in the project repository.
+
+### 3. Database Design & Connectivity
+
+#### Database Technologies
+
+| Technology | Purpose |
+|---|---|
+| MySQL | Relational database management |
+| JDBC | Communication between Java code and MySQL |
+| MySQL Connector/J | JDBC driver for MySQL connectivity |
+| SQL | Defining and managing the database structure |
+
+#### Database Resources
+
+- **Database Schema:** [`CampusSaathi_Schema.sql`](CampusSaathi_Schema.sql)
+- **Entity-Relationship Diagram:** [`CampusSaathi_ER_Diagram.png`](CampusSaathi_ER_Diagram.png)
+- **Database Documentation:** [`Database Documentation`](docs/docs/database/README.md)
+
+#### Database Tables at a Glance
+
+| Table | Purpose |
+|---|---|
+| `users` | Stores application user information and role-related data. |
+| `assignments` | Stores assignment details. |
+| `assignment_submissions` | Stores assignment submission records. |
+| `announcements` | Stores announcements for the application. |
+| `class_schedule` | Stores class schedule information. |
+| `college_info` | Stores college-related information. |
+| `complaints` | Stores complaint records. |
+
+### 4. Week 6 Summary
+
+Week 6 established and documented the database foundation for CampusSaathi. The schema, ER diagram, and database documentation provide a reference for backend development and the integration of application modules.
+
+**Responsible Member:** Mausam
+
+**Module:** Module 2 — Database Design & Connectivity
 
 **Status:** Completed
 
-### Week 7 — Student Assignment Portal
 
-**Objective:** Allow students to view and access available assignments.
 
-**Work completed:**
-- Nikita Rathore developed the student assignment view.
-- Integrated batch filtering and View/Download PDF links.
-
-**Deliverables:** Student assignment servlet and JSP page.
-
-**Evidence:** Student portal screenshots and relevant source code, once verified and available.
-
-**Status:** In Progress
 
 ### Week 8 — PDF Access Control
 
@@ -642,51 +700,436 @@ This structure provides a reference for understanding the codebase and supports 
 
 **Deliverables:** Updated PDF access servlet.
 
-**Evidence:** Servlet source code and test records, when available.
+**Evidence:** Servlet source code an## Week 7: Module 3 & Module 4 Implementation
+
+### 1. Week Overview
+
+Week 7 focused on two important CampusSaathi modules: Authentication & Session Management and the Student Assignment Module.
+
+These modules support secure user access and the student-facing assignment workflow. Authentication helps manage access to the application, while the student assignment module provides access to assignment-related information.
+
+---
+
+### 2. Module 3: Authentication & Session Management
+
+**Responsible Member:** Nikita
+
+#### Role & Scope of Work
+
+Nikita was responsible for the Authentication & Session Management module.
+
+The scope of this module included:
+
+- Developing and maintaining login-related functionality.
+- Supporting session management for authenticated users.
+- Supporting role-based access for different user categories.
+- Coordinating authentication functionality with the application's backend.
+- Supporting access control for student, teacher, administrator, and HOD workflows.
+
+#### Problems & Challenges Faced
+
+- Managing user sessions across application requests.
+- Supporting access restrictions for different user roles.
+- Coordinating login functionality with backend and database components.
+- Maintaining a consistent authentication flow across the application.
+
+#### What Was Completed
+
+- Worked on the authentication module and login-related functionality.
+- Documented the session management and role-based access scope.
+- Organized authentication responsibilities within the overall application workflow.
+
+**Module Status:** Completed
+
+---
+
+### 3. Module 4: Student Assignment Module
+
+**Responsible Member:** Nikita Rathore
+
+#### Role & Scope of Work
+
+Nikita Rathore was responsible for the Student Assignment Module, which supports students in accessing assignment-related information.
+
+The scope of this module included:
+
+- Supporting the student assignment viewing workflow.
+- Organizing assignment information for student access.
+- Coordinating the student-facing functionality with the backend.
+- Supporting integration with assignment data stored in the database.
+- Providing a clear workflow for students to access their academic assignments.
+
+#### Problems & Challenges Faced
+
+- Presenting assignment information in a clear and organized manner.
+- Coordinating the student-facing workflow with backend assignment data.
+- Maintaining consistency between assignment records and the student view.
+- Aligning the module with the overall application structure.
+
+#### What Was Completed
+
+- Worked on the Student Assignment Module.
+- Documented the student assignment viewing workflow.
+- Identified the module's relationship with backend assignment functionality and database records.
+
+**Module Status:** Completed
+
+---
+
+### 4. Module Summary
+
+| Module | Responsible Member | Primary Focus | Status |
+|---|---|---|---|
+| Module 3: Authentication & Session Management | Nikita | Login, sessions, and role-based access | Completed |
+| Module 4: Student Assignment Module | Nikita Rathore | Student-facing assignment access | Completed |
+
+### 5. Week 7 Summary
+
+Week 7 covered authentication and session management alongside student assignment functionality. Together, these modules contribute to user access management and the student-facing academic workflow.
+
+The documented responsibilities establish a reference for subsequent module integration and end-to-end testing.
+
+**Overall Week 7 Status:** Completed
+
+d test records, when available.
 
 **Status:** In Progress
 
-### Week 9 — Marks-Related Functionality
+## Week 8: Module 5 — Admin & HOD Management
 
-**Objective:** Integrate marks information into the student portal.
+### 1. Week Overview
 
-**Work completed:**
-- Kusum integrated the existing marks display into the student portal.
-- Linked assignment status with marks-related information.
+Week 8 focused on the Admin & HOD Management module of CampusSaathi. This module supports administrative operations and Head of Department (HOD) workflows within the academic assignment management system.
 
-**Deliverables:** Updated JSP pages and backend queries.
+The application includes dedicated administrator and HOD controller classes for managing users, dashboards, announcements, and college information.
 
-**Evidence:** Marks page screenshots and related source code, when available.
+### 2. Member 5: Kusum — Admin & HOD Management
 
-**Status:** In Progress
+#### Role & Scope of Work
 
-### Week 10 — Integration Testing
+Kusum was responsible for the Admin & HOD Management module.
 
-**Objective:** Test the integrated assignment workflows.
+The scope of this module included:
 
-**Work completed:**
-- The team tested assignment creation, PDF upload, student assignment viewing, and access control together.
+- Supporting administrator and HOD management workflows.
+- Organizing administrative functionality within the application.
+- Supporting user management operations.
+- Supporting HOD-related announcements and college information management.
+- Coordinating module requirements with the backend and database structure.
+- Documenting the module's role in the overall CampusSaathi system.
 
-**Deliverables:** Test cases and a bug list.
+#### Problems & Challenges Faced
 
-**Evidence:** Testing notes reported in `docs/testing.md`; the document will be linked once added and verified.
+- Organizing administrative operations for different user roles.
+- Coordinating administrator and HOD workflows with the existing backend structure.
+- Maintaining consistency between user management and database records.
+- Keeping administrative functionality aligned with the application's access-control requirements.
+- Integrating administrative features with other application modules.
 
-**Status:** In Progress
+#### What Was Completed
 
-### Week 11 — Documentation and Presentation Preparation
+- Documented the scope of the Admin & HOD Management module.
+- Identified the relevant backend components in the project structure.
+- Organized the module responsibilities and deliverables for project documentation.
+- Documented the relationship between administrative workflows, user management, announcements, and college information.
 
-**Objective:** Prepare academic documentation and presentation materials.
+### 3. Relevant Backend Components
 
-**Work completed:**
-- Kusum prepared drafts of the abstract, SRS, and project report.
-- Manvi drafted the README.
-- The team prepared presentation slides.
+The following files were identified in the project directory structure as related to administrator and HOD functionality.
 
-**Deliverables:** Abstract, SRS, report drafts, README, and presentation slides.
+| File | Responsibility |
+|---|---|
+| `AdminDashboardServlet.java` | Administrator dashboard requests |
+| `AdminCreateUserServlet.java` | Administrator user-creation requests |
+| `AdminUserManagementServlet.java` | Administrator user-management requests |
+| `AdminResetPasswordServlet.java` | Administrator password-reset requests |
+| `AdminBulkImportServlet.java` | Bulk user-import requests |
+| `AdminCsvTemplateServlet.java` | CSV template requests |
+| `HODDashboardServlet.java` | HOD dashboard requests |
+| `HODCreateUserServlet.java` | HOD user-creation requests |
+| `HODUserManagementServlet.java` | HOD user-management requests |
+| `HODAnnouncementServlet.java` | HOD announcement requests |
+| `HODCollegeInfoServlet.java` | HOD college-information requests |
 
-**Evidence:** Actual document and slide files will be linked after they are added to the repository.
+These filenames indicate the relevant areas of functionality; they do not independently verify that every operation has been tested.
 
-**Status:** In Progress
+### 4. Module Summary
+
+| Module | Responsible Member | Primary Focus | Status |
+|---|---|---|---|
+| Module 5: Admin & HOD Management | Kusum | Administrative workflows, user management, announcements, and college information | Completed |
+
+### 5. Week 8 Summary
+
+Week 8 documented the administrative and HOD functionality of CampusSaathi. The identified backend components provide a reference for understanding the administrative workflows and their relationship with the wider application.
+
+This module contributes to the management of users and institutional information within the CampusSaathi system.
+
+**Responsible Member:** Kusum
+
+**Overall Week 8 Status:** Completed
+
+
+## Week 9: System Integration & End-to-End (E2E) Testing
+
+### 1. Week Overview
+
+Week 9 focused on integrating the CampusSaathi modules and performing end-to-end testing of the application.
+
+The objective was to bring together the backend components, database layer, authentication workflow, student assignment functionality, and administrative features into a coordinated application workflow.
+
+Integration and testing help identify compatibility issues between modules, verify expected application behaviour, and improve overall system consistency.
+
+### 2. Member-Wise Integration & Testing Responsibilities
+
+#### 2.1 Manvi Asawa — Backend Development & Project Structure
+
+**Integration & Testing Role**
+
+Manvi's role focused on the backend foundation and coordination of application components.
+
+**Work & Scope**
+
+- Review the organization of backend controller classes.
+- Support coordination between backend components and the web application.
+- Assist with integration of application modules into the overall project structure.
+- Review the backend flow across the different application roles.
+
+**Problems Faced During Integration**
+
+- Coordinating multiple backend components within a single application.
+- Maintaining consistency between module interfaces and application workflows.
+- Identifying issues that may arise when independently developed components are combined.
+
+**What Was Completed**
+
+- Contributed to the backend and project-structure responsibilities.
+- Supported the integration work associated with the overall application structure.
+
+#### 2.2 Mausam — Database Design & Connectivity
+
+**Integration & Testing Role**
+
+Mausam's role focused on the database layer and its compatibility with the application modules.
+
+**Work & Scope**
+
+- Support integration requirements between MySQL and the Java application.
+- Review the database schema in relation to application features.
+- Support coordination between database records and backend operations.
+- Contribute to database-related integration checks.
+
+**Problems Faced During Integration**
+
+- Maintaining consistency between application operations and database structure.
+- Coordinating data requirements across assignments, users, submissions, and announcements.
+- Ensuring that database dependencies are considered during module integration.
+
+**What Was Completed**
+
+- Contributed to database-related integration responsibilities.
+- Supported the use of the documented schema as a reference during system integration.
+
+#### 2.3 Nikita — Authentication & Session Management
+
+**Integration & Testing Role**
+
+Nikita's role focused on authentication and session-related workflows.
+
+**Work & Scope**
+
+- Support integration of login and logout functionality.
+- Review session handling across authenticated application workflows.
+- Consider role-based access requirements during integration.
+- Coordinate authentication requirements with the student, teacher, administrator, and HOD modules.
+
+**Problems Faced During Integration**
+
+- Maintaining consistent authentication behaviour across different workflows.
+- Coordinating session handling with protected application features.
+- Ensuring that role-based access requirements remain consistent across modules.
+
+**What Was Completed**
+
+- Contributed to authentication-related integration responsibilities.
+- Supported the inclusion of login and session workflows in the overall application testing process.
+
+#### 2.4 Nikita Rathore — Student Assignment Module
+
+**Integration & Testing Role**
+
+Nikita Rathore's role focused on student-facing assignment functionality.
+
+**Work & Scope**
+
+- Support integration of student assignment views with backend functionality.
+- Review the relationship between assignment information and the student workflow.
+- Consider the consistency of assignment data presented to students.
+- Contribute to testing the student-facing assignment flow.
+
+**Problems Faced During Integration**
+
+- Coordinating student-facing pages with backend assignment functionality.
+- Maintaining consistency between assignment information and its presentation.
+- Handling dependencies between student workflows and database records.
+
+**What Was Completed**
+
+- Contributed to student assignment module integration responsibilities.
+- Supported the inclusion of student-facing assignment functionality in the overall testing workflow.
+
+#### 2.5 Kusum — Admin & HOD Management
+
+**Integration & Testing Role**
+
+Kusum's role focused on administrative and HOD workflows.
+
+**Work & Scope**
+
+- Support integration of administrator and HOD functionality.
+- Review coordination between dashboards and user-management operations.
+- Consider the interaction between announcements, college information, and administrative features.
+- Contribute to reviewing administrative workflows during system testing.
+
+**Problems Faced During Integration**
+
+- Coordinating administrator and HOD operations with the rest of the application.
+- Maintaining consistency between user-management workflows and stored data.
+- Ensuring that administrative features align with application access-control requirements.
+
+**What Was Completed**
+
+- Contributed to administrative and HOD module integration responsibilities.
+- Supported the inclusion of administrative workflows in the overall application testing process.
+
+
+
+### Summary of Module Distribution
+
+| **Module** | **Member Name** | **Role & Architectural Layer** | **Primary Focus** | **Key Deliverables** |
+| ---------- | --------------- | ------------------------------ | ----------------- | -------------------- |
+| Module 1: Backend Development & Project Structure | Manvi Asawa | Backend / Application Layer | Backend organization, servlet structure, and project documentation | Backend project structure and source organization |
+| Module 2: Database Design & Connectivity | Mausam | Database / Data Layer | MySQL schema, table relationships, and database connectivity | `CampusSaathi_Schema.sql`, ER diagram, and database documentation |
+| Module 3: Authentication & Session Management | Nikita | Authentication / Security Layer | Login, logout, session handling, and role-based access | Authentication and session-management components |
+| Module 4: Student Assignment Module | Nikita Rathore | Student Application Layer | Student assignment viewing and student-side assignment workflow | Student assignment module and related components |
+| Module 5: Admin & HOD Management | Kusum | Administrative / Application Layer | Admin and HOD dashboards, user management, announcements, and college information | Admin and HOD management components |
+
+---
+
+## Week 9: System Integration & End-to-End (E2E) Testing
+
+### 1. Manvi Asawa: Backend Development & Integration
+
+#### Integration & Testing Role
+Coordinated backend integration and helped ensure that application components worked together within the project structure.
+
+#### Work & Scope
+- Reviewed the integration of servlet-based backend components.
+- Supported coordination between the application modules.
+- Helped verify that the integrated application followed the planned project structure.
+
+#### Problems Faced During Integration
+- Ensuring consistent interaction between different modules.
+- Checking that backend components worked together correctly.
+- Coordinating changes across independently developed components.
+
+#### What They Completed
+- Supported overall backend integration.
+- Helped organize and review the integrated project structure.
+- Contributed to end-to-end system verification.
+
+### 2. Mausam: Database Design & Connectivity
+
+#### Integration & Testing Role
+Supported integration between the MySQL database and the application’s data-access components.
+
+#### Work & Scope
+- Reviewed database tables and relationships used by the application.
+- Supported database connectivity and data-flow verification.
+- Helped check that application modules used the intended database structure.
+
+#### Problems Faced During Integration
+- Maintaining consistency between database structure and application queries.
+- Verifying relationships between tables used by different modules.
+- Checking database connectivity during integrated testing.
+
+#### What They Completed
+- Supported database integration and verification.
+- Reviewed the database schema and related documentation.
+- Contributed to checking data flow across the application.
+
+### 3. Nikita: Authentication & Session Management
+
+#### Integration & Testing Role
+Focused on authentication and session handling during integrated application testing.
+
+#### Work & Scope
+- Reviewed login and logout workflows.
+- Checked session handling across application pages.
+- Supported verification of access to role-specific areas.
+
+#### Problems Faced During Integration
+- Maintaining session state while navigating between pages.
+- Ensuring that login and logout workflows interacted correctly with other modules.
+- Checking access behavior for different user roles.
+
+#### What They Completed
+- Supported authentication and session integration.
+- Reviewed login, logout, and role-based access workflows.
+- Contributed to end-to-end testing of authentication-related functionality.
+
+### 4. Nikita Rathore: Student Assignment Module
+
+#### Integration & Testing Role
+Focused on verifying the student assignment module within the integrated application.
+
+#### Work & Scope
+- Reviewed the student assignment viewing workflow.
+- Checked how student-facing pages interacted with backend components.
+- Supported verification of assignment-related information displayed to students.
+
+#### Problems Faced During Integration
+- Ensuring assignment information was displayed consistently.
+- Checking communication between student-facing pages and backend components.
+- Verifying that the assignment workflow fit into the overall student portal.
+
+#### What They Completed
+- Supported integration testing of the student assignment module.
+- Reviewed student-facing assignment functionality.
+- Contributed to end-to-end verification of the student workflow.
+
+### 5. Kusum: Admin & HOD Management
+
+#### Integration & Testing Role
+Focused on integrating and verifying administrative and HOD management functionality.
+
+#### Work & Scope
+- Reviewed Admin and HOD dashboard workflows.
+- Supported verification of user-management functionality.
+- Checked integration of announcements and college-information features.
+
+#### Problems Faced During Integration
+- Coordinating administrative workflows with shared application components.
+- Ensuring user-management operations worked with the database.
+- Verifying that administrative features remained consistent within the integrated system.
+
+#### What They Completed
+- Supported integration testing of Admin and HOD functionality.
+- Reviewed administrative workflows and related components.
+- Contributed to end-to-end verification of management features.
+
+### Overall System Integration Summary
+
+The team integrated the backend, database, authentication, student assignment, and Admin/HOD management modules into the CampusSaathi application.
+
+End-to-end testing focused on verifying that the main application workflows worked together, including authentication, role-based navigation, database interactions, student assignment access, and administrative operations.
+
+Integration work also involved reviewing interactions between JSP pages, Java servlets, JDBC connectivity, and the MySQL database.
+
+**Overall Status:** Completed, as reported by the project team.
+
+
+
 
 ### Week 12 — Final Demonstration and GitHub Organization
 
