@@ -1131,109 +1131,46 @@ Integration work also involved reviewing interactions between JSP pages, Java se
 
 
 
-### Week 12 — Final Demonstration and GitHub Organization
+## Week 10: Final System Evaluation, Deliverables & Project Submission
 
-**Objective:** Organize the repository and prepare final submission materials.
+| **Deliverable** | **Description** | **Resource Link** |
+| --------------- | --------------- | ----------------- |
+| 🌐 **Live Web Application** | Deployed CampusSaathi academic assignment management system. | [Add Live Application Link](#) |
+| 📜 **Project Abstract** | Project overview, objectives, problem statement, and proposed solution. | View Abstract (PDF) |
+| 📋 **Software Requirements Specification (SRS)** | Functional and non-functional requirements and system specifications. | [Add SRS Link](#) |
+| 📄 **Final Project Report** | Complete project documentation, including design, implementation, testing, and conclusion. | [Add Final Report Link](#) |
+| 📑 **IEEE Research Paper** | Research paper describing the CampusSaathi system, architecture, implementation, and evaluation. | [Add IEEE Paper Link](#) |
+| 📊 **Presentation Deck (PPT)** | Project overview, architecture, modules, database design, and results. | [Add PPT Link](#) |
+| 🎥 **Video Demonstration** | Video showcasing the application's implemented features and workflows. | [Add Demo Video Link](#) |
+| 🗄️ **Database Schema** | SQL schema for the project's database. | [CampusSaathi_Schema.sql](CampusSaathi_Schema.sql) |
+| 🖼️ **ER Diagram** | Entity Relationship Diagram for the database design. | [CampusSaathi_ER_Diagram.png](CampusSaathi_ER_Diagram.png) |
+| 📝 **Database Documentation** | Database design and supporting documentation. | [Database Documentation](docs/docs/database/README.md) |
+| 🎨 **UI Mockups & Screenshots** | User interface designs and portal screenshots. | [UI Mockups Documentation](docs/ui-mockups/README.md) |
+| 💻 **Backend Source Code** | Java Servlet controllers and backend components. | [Backend Source Code](src/main/java/com/campussaathi/controller/) |
+| 🌐 **Web Resources** | JSP pages, deployment configuration, and web application resources. | [Web Resources](src/main/webapp/) |
 
-**Work completed:**
-- Set up the CampusSaathi GitHub repository under `Manviasawa2005`.
-- Uploaded the Java project source code and README.
+### Key Accomplishments & Week 10 Milestones
 
-**Deliverables:** Organized GitHub repository, final demonstration video, and presentation slides.
+#### 1. Final Project Report
+- Documented the project objectives, system requirements, architecture, database design, module implementation, and testing.
+- Organized the report for academic project submission.
 
-**Evidence:** [CampusSaathi GitHub Repository](https://github.com/Manviasawa2005/CampusSaathi). Final video and remaining submission materials are pending.
+#### 2. Final Evaluation Presentation
+- Prepared the project presentation covering the problem statement, objectives, architecture, modules, database design, implementation, and conclusion.
 
-**Status:** Pending
+#### 3. End-to-End Product Video Demonstration
+- Prepared the demonstration plan for authentication, student assignment workflows, teacher functionality, and Admin/HOD features implemented in CampusSaathi.
 
----
+#### 4. IEEE Research Paper
+- Prepared research documentation describing CampusSaathi's problem statement, architecture, implementation approach, database design, and evaluation.
 
-## 📑 Documentation and Deliverables
+#### 5. Final Documentation & Submission Preparation
+- Organized the project README, database schema, ER diagram, database documentation, UI mockups, and source code links.
+- Reserved the remaining deliverable links for the final abstract, SRS, report, presentation, research paper, live application, and video demonstration.
 
-The following checklist will be updated as files are prepared and committed to the repository.
+### Week 10 Completion Status
 
-- [ ] Project abstract
-- [ ] Software Requirements Specification (SRS)
-- [ ] Team responsibility chart
-- [ ] Use-case diagram
-- [ ] Class diagram
-- [ ] Entity Relationship (ER) diagram
-- [ ] Database schema and design
-- [ ] UI mock-ups and screenshots
-- [ ] Weekly progress tracking sheet
-- [ ] Module documentation
-- [ ] Test cases and test results
-- [ ] Bug and issue log
-- [ ] Final project report
-- [ ] Presentation slides
-- [ ] Demonstration video
-
----
-
-## 🧪 Testing Strategy
-
-Testing will cover the main application workflows, including:
-
-- Login and session handling.
-- Teacher assignment creation.
-- PDF upload validation and storage.
-- Student assignment listing and filtering.
-- PDF viewing and downloading.
-- Role-based access restrictions.
-- Marks-related information, where implemented.
-- Database connectivity and integration.
-
-Test cases will record the scenario, expected result, actual result, and outcome. A test will be marked as passed only after execution and verification.
-
----
-
-## 🚀 Setup and Execution
-
-### Prerequisites
-
-- Java Development Kit (JDK) 21
-- Apache Tomcat 11
-- MySQL
-- Eclipse IDE or another compatible Java IDE
-
-### Setup Notes
-
-1. Clone or download this repository.
-2. Import the project into Eclipse using the appropriate existing project configuration.
-3. Configure Apache Tomcat 11 in the development environment.
-4. Configure the local MySQL database according to the verified project schema.
-5. Set local database credentials securely.
-6. Deploy the application to Tomcat and test the required workflows.
-
-*The exact database setup, required tables, and deployment instructions will be added after the project configuration and schema are verified.*
-
-**Security note:** Do not commit database passwords, API keys, private configuration files, real student data, or sensitive uploaded documents.
-
----
-
-## 📊 Current Project Status
-
-- Java source code: Uploaded to GitHub.
-- Project structure: Present in the repository.
-- Weekly progress tracker: Documented in this README.
-- Supporting documentation: Being organized and verified.
-- Integration and testing evidence: To be added as available.
-- Final presentation and demonstration video: Pending.
-
-## 🔗 Repository
-
-**GitHub:** [Manviasawa2005/CampusSaathi](https://github.com/Manviasawa2005/CampusSaathi)
-
-## 🎓 Academic Information
-
-| Field | Details |
-|---|---|
-| Project Name | CampusSaathi |
-| Tagline | Your Campus. Connected. Simplified. |
-| Project Type | Academic Software Development Project |
-| Project Guide | To be added |
-| Institution / Department | To be added |
-| Academic Session | To be added |
-
+**Status:** Final documentation and submission preparation.
 ---
 
 ## 📜 License
