@@ -22,4 +22,29 @@ These screenshots provide visual references for the system dashboard and role-sp
 
 ## 4. Screenshot Status
 
-**Status:** Screenshots identified locally. GitHub upload and individual image verification are pending.
+**Status:** All eight UI screenshots have been uploaded to the GitHub repository. Screenshot gallery integration and final rendering verification are in progress.
+## 5. UI Screenshots
+
+### Main Dashboard
+![Main Dashboard](dashboard.png)
+
+### Dashboard (A)
+![Dashboard A](dashboard(a).png)
+
+### Dashboard (B)
+![Dashboard B](dashboard(b).png)
+
+### Administration Portal
+![Administration Portal](adminstration%20portal.png)
+
+### HOD Portal
+![HOD Portal](hod%20portal.png)
+
+### Teacher Portal
+![Teacher Portal](teacher%20portal.png)
+
+### Student Portal
+![Student Portal](student%20portal.png)
+
+### Club Lead Portal
+![Club Lead Portal](club%20lead%20portal.png)
