@@ -1141,7 +1141,7 @@ Integration work also involved reviewing interactions between JSP pages, Java se
 | 📑 **IEEE Research Paper** | Research paper documenting the CampusSaathi project, its design, and implementation. | [View IEEE Research Paper](https://github.com/Manviasawa2005/CampusSaathi/blob/main/research%20paper.pdf) |
 | 📄 **Final Project Report** | Complete project documentation, including design, implementation, testing, and conclusion. | [View Final Report](https://github.com/Manviasawa2005/CampusSaathi/raw/refs/heads/main/campussathi_final_report.docx) |
 | 📊 **Presentation Deck (PPT)** | Project overview, architecture, modules, database design, and results. | [View Presentation](https://github.com/Manviasawa2005/CampusSaathi/raw/refs/heads/main/CampusSaathi_Final_Presentation.pptx) |
-| 🎥 **Video Demonstration** | Video showcasing the application's implemented features and workflows. | [Add Demo Video Link](#) |
+| 🎥 **Project Demo Video** | Watch the CampusSaathi project demonstration on YouTube. | [Watch Demo](https://youtu.be/Ru9ikEiGpNU) |
 | 🗄️ **Database Schema** | SQL schema for the project's database. | [CampusSaathi_Schema.sql](CampusSaathi_Schema.sql) |
 | 🖼️ **ER Diagram** | Entity Relationship Diagram for the database design. | [CampusSaathi_ER_Diagram.png](CampusSaathi_ER_Diagram.png) |
 | 📝 **Database Documentation** | Database design and supporting documentation. | [Database Documentation](docs/docs/database/README.md) |
