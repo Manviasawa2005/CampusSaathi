@@ -45,18 +45,22 @@ The project focuses on teacher and student interactions, assignment management, 
 
 ## 🛠️ Technology Stack
 
-| Technology | Purpose |
+| **Technology** | **Purpose** |
 |---|---|
-| Java 21 | Application logic |
+| Java 21 | Application logic and backend development |
 | Jakarta Servlets | Server-side request handling |
-| JSP | Dynamic web pages, where used |
+| JSP | Dynamic web pages |
+| HTML | Web page structure |
+| CSS | Styling and layout |
+| JavaScript | Client-side interactions |
 | JDBC | Database connectivity |
 | MySQL | Relational database |
 | Apache Tomcat 11 | Web application server |
 | Eclipse IDE | Development environment |
 | Git | Version control |
 | GitHub | Source code hosting and project documentation |
-
+| Docker | Application containerization |
+| Render | Application deployment and hosting |
 ---
 
 ## ✨ Project Modules
