@@ -151,7 +151,7 @@ This section tracks the project across 12 academic weeks. Statuses reflect the p
 | 5 | Teacher assignment creation | In Progress |
 | 6 | PDF upload and storage | Completed |
 | 7 | Student assignment portal | In Progress |
-| 8 | PDF access control | In Progress |
+| 8 | PDF access control | Completed |
 | 9 | Marks-related functionality | In Progress |
 | 10 | Integration testing | In Progress |
 | 11 | Documentation and presentation preparation | In Progress |
